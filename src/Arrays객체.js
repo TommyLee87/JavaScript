@@ -85,3 +85,23 @@ let persons = [
 
   const local = persons.filter(person => person.city === "제주");
   console.log(local);
+
+// for 사용
+  let pppp = [];
+  for (let i = 0; i < persons.length; i++) {
+    if (persons[i].point >= 80) {
+      pppp.push(persons[i]);
+    }
+  }
+console.log(pppp);
+
+// map() 메소드 : 배열의 각 요소를 변환하고, 그 결과를 새로운 배열로 반환하는 메솓 (리액트에서 가장 많이 사용)
+const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+const squaredNumbers = numbers.map(function (number) {
+  return number * number;
+});
+console.log(squaredNumbers);
+
+const squaredNumbers2 = numbers.map(num => num * num);
+console.log(squaredNumbers2);
+

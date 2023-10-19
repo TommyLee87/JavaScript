@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>버튼클릭 - 박스색변경</title>
+    <style>
+        button {
+        width:150px;
+        height:30px;
+        color:#fff;
+        border:none;
+        }
+        .btn1 {
+            background-color: red;
+        }
+        .btn2 {
+            background-color: blue;
+        }
+        .btn3 {
+            background-color: orange;
+        }
+        button:hover {
+            cursor:pointer; 
+        }
+        #boxColor{
+        margin-top: 20px;
+        border: 1px solid #888;
+        border-radius: 10px;
+        width:450px;
+        height: 200px;
+        padding-left:10px;
+        background-color: bisque;
+        }
+        .red {
+	    background-color: red;
+        }
+        .blue {
+        background-color: blue;
+        }
+        .orange {
+        background-color: orange;
+        }
+
+    </style>
+</head>
+<body>
+    <div>
+    <button class="btn1" onclick="colorEvent('red')">Red</button>
+    <button class="btn2" onclick="colorEvent('blue')">Blue</button>
+    <button class="btn3" onclick="colorEvent('orange')">Orange</button>
+    </div>
+    <div id="boxColor"></div>
+
+    <script>
+        function colorEvent(color) {
+            let boxColor = document.querySelector("#boxColor");
+            boxColor.style.backgroundColor = color;
+        }
+    </script>
+    
+</body>
+</html>

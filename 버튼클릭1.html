@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>버튼클릭 - 경고창</title>
+    <style>
+        button {
+            width:150px;
+            height:30px;
+            background:#222;
+            color:#fff;
+            border:none;
+        }
+        .btn1 {
+            background-color: red;
+        }
+        .btn2 {
+            background-color: blue;
+        }
+        .btn3 {
+            background-color: orange;
+        }
+        button:hover {
+            cursor:pointer; 
+        }
+
+    </style>
+</head>
+<body>
+    <button class="btn1" onclick="redEvent()">Red</button>
+    <button class="btn2" onclick="blueEvent()">Blue</button>
+    <button class="btn3" onclick="orangeEvent()">Orange</button>
+
+    <script>
+        function redEvent() {
+            alert("빨갛게 빨갛게 물들었네.");
+
+        }
+        function blueEvent() {
+            alert("파랗게 파랗게 물들었네.");
+        }
+        function orangeEvent() {
+            alert("노랗게 노랗게 물들었네.");
+        }
+    </script>
+</body>
+</html>
