@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">   
+    <link rel="stylesheet" href="../css/회원가입.css">   
+    <title>Sign-up</title>
+
+</head>
+<body>
+    <div id="container">
+        <div class="box">
+            <input type="text" class="center" placeholder="아이디 입력" onclick="checkId()">
+            <button class="btn1" id="confirmId">확인</button>
+            <br>
+            <input type="text" class="center" placeholder="패스워드 입력" onclick="checkPw()">
+            <button class="btn1" id="confirmPw">확인</button>
+            <br>
+            <input type="text" class="center" placeholder="이메일 입력" onclick="checkEmail()">
+            <button class="btn1" id="confirmEmail">확인</button>
+            <br>
+            <input type="text" class="center" placeholder="전화번호 입력" onclick="checkPhone()">
+            <button class="btn1" id="confirmPhone">확인</button>
+        </div>
+        <div>
+        <button class="btn2" onclick="register()">가입 요청</button>
+        </div>
+    </div>
+    
+</body>
+</html>
